@@ -26,26 +26,3 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 > - 500 Internal Server Error: Em caso de falha na geração do token.
 
 ---
-
-#### 2. Obter Todos os Veículos
-- **Endpoint:** `/veiculos`
-- **Método:** `GET`
-- **Descrição:** Obtém todos os veículos cadastrados.
-- **Autenticação:** Necessário token JWT.
-  
- **Resposta de Sucesso:**
-   ```json
-   [
-   {
-     "id": 1,
-     "veiculo": "Carro Exemplo",
-     "status": "CONNECTED"
-   }
-]
-
- **Respostas de Erro:**
- > - 401 Unauthorized: Token não fornecido ou inválido.
- > - 400 Bad Request: Falha ao buscar os dados dos veículos.
-
----
-
