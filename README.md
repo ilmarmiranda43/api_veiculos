@@ -26,3 +26,6 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 > - 500 Internal Server Error: Em caso de falha na geração do token.
 
 ---
+#### 2. Obter Todos os Veículos
+
+---
