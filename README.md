@@ -1,11 +1,11 @@
 # api_veiculos
 API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 
-# Guia de Uso da API
+## Guia de Uso da API
 
-## Endpoints
+### Endpoints
 
-### 1. Geração de Token
+#### 1. Geração de Token
 - **Endpoint:** `/generate_token`
 - **Método:** `POST`
 - **Descrição:** Gera um token JWT.
@@ -27,7 +27,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 
 ---
 
-### 2. Obter Todos os Veículos
+##### 2. Obter Todos os Veículos
 - **Endpoint:** `/veiculos`
 - **Método:** `GET`
 - **Descrição:** Obtém todos os veículos cadastrados.
@@ -47,7 +47,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 
 ---
 
-### 3. Obter Veículo por ID
+###### 3. Obter Veículo por ID
 - **Endpoint:** `/veiculos/<int:veiculo_id>`
 - **Método:** `GET`
 - **Descrição:** Obtém o veículo cadastrado pelo ID.
