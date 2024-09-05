@@ -15,3 +15,22 @@ Descrição: Gera um token JWT com base no MerchantId e MerchantKey fornecidos. 
 -MerchantId: ID do Merchant (obrigatório) <br>
 -MerchantKey: Chave do Merchant (obrigatório) <br>
 Resposta de Sucesso:
+
+# Guia de Uso da API
+
+## Endpoints
+
+### 1. Geração de Token
+- **Endpoint:** `/generate_token`
+- **Método:** `POST`
+- **Descrição:** Gera um token JWT.
+
+  > **Parâmetros de Entrada:**
+  > - `MerchantId`: ID do Merchant (obrigatório)
+  > - `MerchantKey`: Chave do Merchant (obrigatório)
+
+  **Resposta de Sucesso:**
+  ```json
+  {
+    "token": "<JWT Token>"
+  }
