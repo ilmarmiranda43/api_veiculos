@@ -8,8 +8,8 @@ Esta é uma API para gerenciamento de veículos, construída com Flask e Flask-R
 ## Autenticação
 A API utiliza autenticação via JWT (JSON Web Token). O token deve ser incluído no header da requisição no formato:
 
-Authorization: Bearer <token>
-Geração de Token
+### Authorization: Bearer <token>
+## Geração de Token
 Endpoint: /generate_token
 Método: POST
 Descrição: Gera um token JWT com base no MerchantId e MerchantKey fornecidos.
