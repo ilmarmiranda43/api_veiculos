@@ -29,9 +29,9 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 **Resposta de Sucesso:**
   ```json
  [
-  {
-    "id": 1,
-    "veiculo": "Carro Exemplo",
-    "status": "CONNECTED"
-  }
+   {
+     "id": 1,
+     "veiculo": "Carro Exemplo",
+     "status": "CONNECTED"
+   }
 ]
