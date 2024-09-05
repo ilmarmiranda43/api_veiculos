@@ -33,17 +33,17 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 - **Descrição:** Obtém todos os veículos cadastrados.
 - **Autenticação:** Necessário token JWT.
   
-**Resposta de Sucesso:**
-  ```json
-  {
-     "id": 1,
-     "veiculo": "Carro Exemplo",
-     "status": "CONNECTED"
-  }
+ **Resposta de Sucesso:**
+   ```json
+   {
+      "id": 1,
+      "veiculo": "Carro Exemplo",
+      "status": "CONNECTED"
+   }
 
  **Respostas de Erro:**
-> - 401 Unauthorized: Token não fornecido ou inválido.
-> - 400 Bad Request: Falha ao buscar os dados dos veículos.
+ > - 401 Unauthorized: Token não fornecido ou inválido.
+ > - 400 Bad Request: Falha ao buscar os dados dos veículos.
 
 ---
 
