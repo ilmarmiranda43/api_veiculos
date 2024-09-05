@@ -35,6 +35,29 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
   
 **Resposta de Sucesso:**
   ```json
+  {
+     "id": 1,
+     "veiculo": "Carro Exemplo",
+     "status": "CONNECTED"
+  }
+
+ **Respostas de Erro:**
+> - 401 Unauthorized: Token não fornecido ou inválido.
+> - 400 Bad Request: Falha ao buscar os dados dos veículos.
+
+---
+
+### 3. Obter Veículo por ID
+- **Endpoint:** `/veiculos/<int:veiculo_id>`
+- **Método:** `GET`
+- **Descrição:** Obtém o veículo cadastrado pelo ID.
+- **Autenticação:** Necessário token JWT.
+
+ > **Parâmetros da URL:**
+  > - `veiculo_id`: ID do veículo (obrigatório)
+  
+**Resposta de Sucesso:**
+  ```json
  [
    {
      "id": 1,
@@ -46,5 +69,3 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
  **Respostas de Erro:**
 > - 401 Unauthorized: Token não fornecido ou inválido.
 > - 400 Bad Request: Falha ao buscar os dados dos veículos.
-
-
