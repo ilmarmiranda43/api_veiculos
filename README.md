@@ -24,7 +24,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 - **Endpoint:** `/veiculos`
 - **Método:** `GET`
 - **Descrição:** Obtém todos os veículos cadastrados.
-- **Autenticação: Necessário token JWT.
+- **Autenticação:** Necessário token JWT.
   
 **Resposta de Sucesso:**
   ```json
