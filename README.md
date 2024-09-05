@@ -12,6 +12,6 @@ Endpoint: /generate_token <br>
 Método: POST <br>
 Descrição: Gera um token JWT com base no MerchantId e MerchantKey fornecidos. <br>
 Parâmetros de Entrada: <br>
-  MerchantId: ID do Merchant (obrigatório) <br>
-  MerchantKey: Chave do Merchant (obrigatório) <br>
+-MerchantId: ID do Merchant (obrigatório) <br>
+-MerchantKey: Chave do Merchant (obrigatório) <br>
 Resposta de Sucesso:
