@@ -10,8 +10,8 @@ Esta é uma API para gerenciamento de veículos, construída com Flask e Flask-R
 ## 1. Geração de Token
 Endpoint: /generate_token <br>
 Método: POST <br>
-Descrição: Gera um token JWT com base no MerchantId e MerchantKey fornecidos.
-Parâmetros de Entrada:
-MerchantId: ID do Merchant (obrigatório)
-MerchantKey: Chave do Merchant (obrigatório)
+Descrição: Gera um token JWT com base no MerchantId e MerchantKey fornecidos. <br>
+Parâmetros de Entrada: <br>
+  MerchantId: ID do Merchant (obrigatório) <br>
+  MerchantKey: Chave do Merchant (obrigatório) <br>
 Resposta de Sucesso:
