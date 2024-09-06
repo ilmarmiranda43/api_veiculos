@@ -69,26 +69,24 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
  > - 400 Bad Request: Falha ao buscar os dados dos veículos
 ----
 #### 4. Atualizar Status de Veículo
-- **Endpoint:** `/veiculos/<int:veiculo_id>`
-- **Método:** `GET`
-- **Descrição:** Obtém o veículo cadastrado pelo ID
+- **Endpoint:** `/veiculos/UPDATE/<int:veiculo_id>/<int:novo_status>`
+- **Método:** `PUT`
+- **Descrição:** Atualiza o status do veículo cadastrado para 0 (DESCONECTADO) ou 1 (CONECTADO)
 - **Autenticação:** Necessário token JWT.
 
    > **Parâmetros da URL:**
    > - `veiculo_id`: ID do veículo (obrigatório)
+   > - `novo_status`: NOvo status do veículo(0 ou 1)
 
   **Resposta de Sucesso:**
    ```json
-    [
-      {
-        "id": 1,
-        "veículo": "Carro Exemplo",
-        "status": "CONNECTED"
+     {
+        "message": "Veículo atualizado com sucesso!"
       }
-  ]
 **Respostas de Erro:**
  > - 401 Unauthorized: Token não fornecido ou inválido.
- > - 400 Bad Request: Falha ao buscar os dados dos veículos
+ > - 404 Not Found: Veículo não encontrado.
+ > - 400 Bad Request: Status inválido
 
 ---
 
