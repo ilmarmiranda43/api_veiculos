@@ -1,5 +1,7 @@
-# api_veiculos
-API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
+# Documentação da API de Veículos
+Esta é uma API para gerenciamento de veículos, construída com Flask e Flask-RESTx. Ela permite a realização de operações CRUD (Criar, Ler, Atualizar e Deletar) em registros de veículos, além de suportar autenticação via JWT para proteger os endpoints.
+
+---
 
 ## Guia de Uso da API
 
