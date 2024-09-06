@@ -105,30 +105,6 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
    > - 404 Not Found: Veículo não encontrado.
    > - 400 Bad Request: Falha ao deletar o veículo.
 
-## 6. Adicionar Veículos
-  - **Endpoint:** `/add_veiculos`
-  - **Método:** `post`
-  - **Descrição:** Adiciona um ou mais veículos.
-  - **Autenticação:** Necessário token JWT.
-  
-    **Exemplo de Requisição:**
-     ```json
-       {
-          "veiculos": ["Carro Exemplo 1", "Carro Exemplo 2"]
-        }
-  
-  > **Parâmetros da URL:**
-  > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
-   
-  > **Resposta de Sucesso:**
-   ```json
-    {
-      "message": "Veículo(s) adicionado(s) com sucesso"
-     }
 
-  - **Respostas de Erro:**
-    - 400 Bad Request: Falha ao adicionar o veículo.
-
-## 7. Auntenticação
 
 
