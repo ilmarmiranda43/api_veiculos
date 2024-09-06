@@ -125,7 +125,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
    
   **Resposta de Sucesso:**
   ```json
-        {
-          "message": "Veículo(s) adicionado(s) com sucesso"
-         }
+    {
+      "message": "Veículo(s) adicionado(s) com sucesso"
+     }
 ---
