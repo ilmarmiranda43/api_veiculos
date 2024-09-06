@@ -64,6 +64,9 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
         "status": "CONNECTED"
       }
   ]
+**Respostas de Erro:**
+ > - 401 Unauthorized: Token não fornecido ou inválido.
+ > - 400 Bad Request: Falha ao buscar os dados dos veículos
 ----
 
 
