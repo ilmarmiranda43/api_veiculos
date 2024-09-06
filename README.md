@@ -3,9 +3,9 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 
 ## Guia de Uso da API
 
-### Endpoints
+## Endpoints
 
-#### 1. Geração de Token
+## 1. Geração de Token
 - **Endpoint:** `/generate_token`
 - **Método:** `POST`
 - **Descrição:** Gera um token JWT.
@@ -25,8 +25,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 > - 401 Unauthorized: Quando MerchantId ou MerchantKey são inválidos.
 > - 500 Internal Server Error: Em caso de falha na geração do token.
 
----
-#### 2. Obter Todos os Veículos
+## 2. Obter Todos os Veículos
 - **Endpoint:** `/veiculos`
 - **Método:** `GET`
 - **Descrição:** Obtém todos os veículos cadastrados.
@@ -129,8 +128,8 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
       "message": "Veículo(s) adicionado(s) com sucesso"
      }
 
-> **Respostas de Erro:**
-> - 400 Bad Request: Falha ao adicionar o veículo.
+  > **Respostas de Erro:**
+  > - 400 Bad Request: Falha ao adicionar o veículo.
 
 ---
 #### 7. Auntenticação
