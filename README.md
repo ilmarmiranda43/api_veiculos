@@ -115,12 +115,12 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
      > - `veiculo_id`: Lista de veículos a serem adicionados (obrigatório)
 
     **Exemplo de Requisição:**
-     ``json
-      {
-        "veiculos": []
-      }
+     ```json
+       {
+          "message": "Veículo deletado com sucesso"
+        }
      
-    **Resposta de Sucesso:**
+  **Resposta de Sucesso:**
      ```json
        {
           "message": "Veículo deletado com sucesso"
