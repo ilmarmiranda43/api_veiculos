@@ -106,13 +106,19 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
    > - 400 Bad Request: Falha ao deletar o veículo.
 
 ## 6. Adicionar Veículos
-  - **Endpoint:** `/veiculos/delete/<int:veiculo_id>`
-  - **Método:** `DELETE`
-  - **Descrição:** Apaga o veículo cadastrado pelo código informado.
+  - **Endpoint:** `/add_veiculos`
+  - **Método:** `POST`
+  - **Descrição:** Adiciona um ou mais veículos.
   - **Autenticação:** Necessário token JWT.
   
      > **Parâmetros da URL:**
-     > - `veiculo_id`: ID do veículo (obrigatório)
+     > - `veiculo_id`: Lista de veículos a serem adicionados (obrigatório)
+
+    **Exemplo de Requisição:**
+     ``json
+      {
+        "veiculos": []
+      }
      
     **Resposta de Sucesso:**
      ```json
