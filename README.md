@@ -104,10 +104,10 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
           "message": "Veículo deletado com sucesso"
         }
      ```
-  **Respostas de Erro:**
-   > - 401 Unauthorized: Token não fornecido ou inválido.
-   > - 404 Not Found: Veículo não encontrado.
-   > - 400 Bad Request: Falha ao deletar o veículo.
+  - **Respostas de Erro:**
+    - 401 Unauthorized: Token não fornecido ou inválido.
+    - 404 Not Found: Veículo não encontrado.
+    - 400 Bad Request: Falha ao deletar o veículo.
 
 
 ## 6. Adicionar Veículos
