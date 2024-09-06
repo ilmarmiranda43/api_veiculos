@@ -69,64 +69,63 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
  > - 400 Bad Request: Falha ao buscar os dados dos veículos
 ----
 #### 4. Atualizar Status de Veículo
-- **Endpoint:** `/veiculos/UPDATE/<int:veiculo_id>/<int:novo_status>`
-- **Método:** `PUT`
-- **Descrição:** Atualiza o status do veículo cadastrado para 0 (DESCONECTADO) ou 1 (CONECTADO)
-- **Autenticação:** Necessário token JWT.
-
-   > **Parâmetros da URL:**
-   > - `veiculo_id`: ID do veículo (obrigatório)
-   > - `novo_status`: NOvo status do veículo(0 ou 1)
-
-  **Resposta de Sucesso:**
-   ```json
-     {
-        "message": "Veículo atualizado com sucesso!"
-      }
-**Respostas de Erro:**
- > - 401 Unauthorized: Token não fornecido ou inválido.
- > - 404 Not Found: Veículo não encontrado.
- > - 400 Bad Request: Status inválido
+  - **Endpoint:** `/veiculos/UPDATE/<int:veiculo_id>/<int:novo_status>`
+  - **Método:** `PUT`
+  - **Descrição:** Atualiza o status do veículo cadastrado para 0 (DESCONECTADO) ou 1 (CONECTADO)
+  - **Autenticação:** Necessário token JWT.
+  
+     > **Parâmetros da URL:**
+     > - `veiculo_id`: ID do veículo (obrigatório)
+     > - `novo_status`: NOvo status do veículo(0 ou 1)
+  
+    **Resposta de Sucesso:**
+     ```json
+       {
+          "message": "Veículo atualizado com sucesso!"
+        }
+  **Respostas de Erro:**
+   > - 401 Unauthorized: Token não fornecido ou inválido.
+   > - 404 Not Found: Veículo não encontrado.
+   > - 400 Bad Request: Status inválido
 
 ---
 #### 5. Deletar Veículo
-- **Endpoint:** `/veiculos/delete/<int:veiculo_id>`
-- **Método:** `DELETE`
-- **Descrição:** Apaga o veículo cadastrado pelo código informado.
-- **Autenticação:** Necessário token JWT.
-
-   > **Parâmetros da URL:**
-   > - `veiculo_id`: ID do veículo (obrigatório)
-   
-  **Resposta de Sucesso:**
-   ```json
-     {
-        "message": "Veículo deletado com sucesso"
-      }
-**Respostas de Erro:**
- > - 401 Unauthorized: Token não fornecido ou inválido.
- > - 404 Not Found: Veículo não encontrado.
- > - 400 Bad Request: Falha ao deletar o veículo.
+  - **Endpoint:** `/veiculos/delete/<int:veiculo_id>`
+  - **Método:** `DELETE`
+  - **Descrição:** Apaga o veículo cadastrado pelo código informado.
+  - **Autenticação:** Necessário token JWT.
+  
+     > **Parâmetros da URL:**
+     > - `veiculo_id`: ID do veículo (obrigatório)
+     
+    **Resposta de Sucesso:**
+     ```json
+       {
+          "message": "Veículo deletado com sucesso"
+        }
+  **Respostas de Erro:**
+   > - 401 Unauthorized: Token não fornecido ou inválido.
+   > - 404 Not Found: Veículo não encontrado.
+   > - 400 Bad Request: Falha ao deletar o veículo.
 ---
 #### 6. Adicionar Veículos
-- **Endpoint:** `/add_veiculos`
-- **Método:** `post`
-- **Descrição:** Adiciona um ou mais veículos.
-- **Autenticação:** Necessário token JWT.
-
-  **Exemplo de Requisição:**
-   ```json
-     {
-        "veiculos": ["Carro Exemplo 1", "Carro Exemplo 2"]
-      }
-
-> **Parâmetros da URL:**
-> - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
- 
- **Resposta de Sucesso:**
-  ```json
-      {
-        "message": "Veículo(s) adicionado(s) com sucesso"
-       }
-
+  - **Endpoint:** `/add_veiculos`
+  - **Método:** `post`
+  - **Descrição:** Adiciona um ou mais veículos.
+  - **Autenticação:** Necessário token JWT.
+  
+    **Exemplo de Requisição:**
+     ```json
+       {
+          "veiculos": ["Carro Exemplo 1", "Carro Exemplo 2"]
+        }
+  
+  > **Parâmetros da URL:**
+  > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
+   
+   **Resposta de Sucesso:**
+    ```json
+        {
+          "message": "Veículo(s) adicionado(s) com sucesso"
+         }
 ---
