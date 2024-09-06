@@ -114,20 +114,21 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 - **Descrição:** Adiciona um ou mais veículos.
 - **Autenticação:** Necessário token JWT.
 
-   > **Parâmetros da URL:**
-   > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
-
   **Exemplo de Requisição:**
    ```json
      {
         "veiculos": ["Carro Exemplo 1", "Carro Exemplo 2"]
       }
-  
-  **Resposta de Sucesso:**
-   ```json
-     {
+   
+   > **Parâmetros da URL:**
+   > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
+ 
+ **Resposta de Sucesso:**
+    ```json
+      {
         "message": "Veículo(s) adicionado(s) com sucesso"
-      }
+       }
+   
 **Respostas de Erro:**
  > - 400 Bad Request: Entrada inválida.
  > - 400 Bad Request: Falha ao adicionar o veículo.
