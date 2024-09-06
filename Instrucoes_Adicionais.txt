@@ -1,0 +1,11 @@
+Instruções adicionais:
+
+1 - Criação de Banco de dados e as tabelas necessárias para utilizar a API:
+	- O script script_criacao_banco_tabelas.sql deve ser rodado em seu SSMS para criação do banco de dados e suas respectivas tabelas
+	
+2 - O usuário utilizado para acessar o banco de dados é Teste_API e a senha está no código, caso deseje utilizar um usuário/senha diferentes, basta alterar no código.
+
+3 - A planilha merchant_data.xlsx contém 10 MerchantId, MerchantKey. Essa informação deverá estar na tabela Merchants para que a API possa validar se o usuário existe e dessa
+forma gear o Token necessário para a s operações.
+
+
