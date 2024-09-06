@@ -46,9 +46,9 @@ Authorization: Bearer <token>
          "veiculo": "Carro Exemplo",
          "status": "CONNECTED"
        }
-     ]
-    ```
-  - **Respostas de Erro:**
+       ]
+      ```
+  - **Resposta de Erro:**
     - 401 Unauthorized: Token não fornecido ou inválido.
     - 400 Bad Request: Falha ao buscar os dados dos veículos.
 
@@ -61,17 +61,19 @@ Authorization: Bearer <token>
    > **Parâmetros da URL:**
    > - `veiculo_id`: ID do veículo (obrigatório)
 
-  **Resposta de Sucesso:**
-   ```json
-    [
-      {
-        "id": 1,
-        "veículo": "Carro Exemplo",
-        "status": "CONNECTED"
-      }
-  ]
-  ```
-- **Respostas de Erro:**
+  - **Resposta de Sucesso:**
+    - Código `200 OK`
+    - Conteúdo: Dados do veículo no formato:
+     ```json
+      [
+        {
+          "id": 1,
+          "veículo": "Carro Exemplo",
+          "status": "CONNECTED"
+        }
+      ]
+      ```
+- **Resposta de Erro:**
   - 401 Unauthorized: Token não fornecido ou inválido.
   - 400 Bad Request: Falha ao buscar os dados dos veículos
 
@@ -81,17 +83,19 @@ Authorization: Bearer <token>
   - **Descrição:** Atualiza o status do veículo cadastrado para 0 (DESCONECTADO) ou 1 (CONECTADO)
   - **Autenticação:** Necessário token JWT.
   
-     > **Parâmetros da URL:**
-     > - `veiculo_id`: ID do veículo (obrigatório)
-     > - `novo_status`: NOvo status do veículo(0 ou 1)
+     - **Parâmetros da URL:**
+       - `veiculo_id`: ID do veículo (obrigatório)
+       - `novo_status`: NOvo status do veículo(0 ou 1)
   
-    **Resposta de Sucesso:**
-     ```json
-       {
-          "message": "Veículo atualizado com sucesso!"
-        }
-     ```
-     - **Respostas de Erro:**
+    - **Resposta de Sucesso:**
+      - Código `200 OK`
+      - Conteúdo:
+       ```json
+         {
+            "message": "Veículo atualizado com sucesso!"
+          }
+       ```
+     - **Resposta de Erro:**
        - 401 Unauthorized: Token não fornecido ou inválido.
        - 404 Not Found: Veículo não encontrado.
        - 400 Bad Request: Status inválido
@@ -102,16 +106,18 @@ Authorization: Bearer <token>
   - **Descrição:** Apaga o veículo cadastrado pelo código informado.
   - **Autenticação:** Necessário token JWT.
   
-     > **Parâmetros da URL:**
-     > - `veiculo_id`: ID do veículo (obrigatório)
+     - **Parâmetros da URL:**
+       - `veiculo_id`: ID do veículo (obrigatório)
      
-    **Resposta de Sucesso:**
-     ```json
-       {
-          "message": "Veículo deletado com sucesso"
-        }
-     ```
-    - **Respostas de Erro:**
+    - **Resposta de Sucesso:**
+      - Código `200 OK`
+      - Conteúdo:
+       ```json
+         {
+            "message": "Veículo deletado com sucesso"
+          }
+       ```
+    - **Resposta de Erro:**
       - 401 Unauthorized: Token não fornecido ou inválido.
       - 404 Not Found: Veículo não encontrado.
       - 400 Bad Request: Falha ao deletar o veículo.
@@ -122,7 +128,10 @@ Authorization: Bearer <token>
   - **Método:** `post`
   - **Descrição:** Adiciona um ou mais veículos.
   - **Autenticação:** Necessário token JWT.
-  
+
+    - **Parâmetros da URL:**
+      - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
+    
     **Exemplo de Requisição:**
      ```json
        {
@@ -130,17 +139,16 @@ Authorization: Bearer <token>
         }
      ```
   
-    > **Parâmetros da URL:**
-    > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
-     
-    > **Resposta de Sucesso:**
-     ```json
-      {
-        "message": "Veículo(s) adicionado(s) com sucesso"
-       }
-    ```
+    - **Resposta de Sucesso:**
+      - Código `200 OK`
+      - Conteúdo:
+       ```json
+        {
+          "message": "Veículo(s) adicionado(s) com sucesso"
+         }
+      ```
     
-    - **Respostas de Erro:**
+    - **Resposta de Erro:**
       - 400 Bad Request: Falha ao adicionar o veículo.
       - 400 Bad Request: Entrada inválida.
 
