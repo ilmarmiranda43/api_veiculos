@@ -152,4 +152,36 @@ Authorization: Bearer <token>
     - 400 Bad Request: Falha ao adicionar o veículo.
     - 400 Bad Request: Entrada inválida.
 
+---
+# Modelos de Dados
+
+## 1. Modelo de Veículo
+- **Nome:** `Veiculos`
+- **Estrutura:**
+  - `veiculos` : Lista de strings representando os nomes dos veículos (obrigatório)
+
+## 2. Modelo de Token
+- **Nome:** `Veiculos`
+- **Estrutura:**
+  - MerchantId: ID do Merchant (obrigatório).
+  - MerchantKey: Chave do Merchant (obrigatório).
+
+---
+## Banco de Dados
+- **Nome:** `GerenciarVeiculos`
+  - **Tabela:** `Veiculos`
+    - **Colunas:**
+      - `id`: Identificador único do veículo.
+      - `veiculo`: Nome do veículo.
+      - `status`: Status do veículo (CONNECTED ou DISCONNECTED).
+   - **Descrição:**
+     - Na tabela Veiculos ficará armazenado os dados de todos os veículos que forem cadastrados. Nesse modelo está sendo usando o banco de dados SQL Server
+  
+  - **Tabela:** `Merchants`
+    - **Colunas:**
+      - `id`: Identificador único da chave de acesso.
+      - `MerchantId`: ID da chave de acesso.
+      - `MerchantKey`: Chave de acesso.
+   - **Descrição:**
+     - Na tabela Merchants ficará armazenado as chaves de acesso para cada usuário, e que será necessário para gerar o Token.
 
