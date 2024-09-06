@@ -126,8 +126,8 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
       "message": "Veículo(s) adicionado(s) com sucesso"
      }
 
-  > **Respostas de Erro:**
-  > - 400 Bad Request: Falha ao adicionar o veículo.
+  - **Respostas de Erro:**
+    - 400 Bad Request: Falha ao adicionar o veículo.
 
 ## 7. Auntenticação
 
