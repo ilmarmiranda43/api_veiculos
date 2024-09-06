@@ -46,3 +46,11 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
  > - 400 Bad Request: Falha ao buscar os dados dos veículos.
 
 ---
+#### 3. Obter Veículo por ID
+- **Endpoint:** `/veiculos/<int:veiculo_id>`
+- **Método:** `GET`
+- **Descrição:** Obtém o veículo cadastrado pelo ID.
+- **Autenticação:** Necessário token JWT.
+
+---
+
