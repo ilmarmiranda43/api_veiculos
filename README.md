@@ -5,6 +5,11 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 
 ## Endpoints
 
+## Autenticação
+A API utiliza autenticação via JWT (JSON Web Token). O token deve ser incluído no header da requisição no formato:
+
+Authorization: Bearer <token>
+
 ## 1. Geração de Token
 - **Endpoint:** `/generate_token`
 - **Método:** `POST`
@@ -14,12 +19,10 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
   > - `MerchantId`: ID do Merchant (obrigatório)
   > - `MerchantKey`: Chave do Merchant (obrigatório)
 
-  **Resposta de Sucesso:**
-  ```json
-  {
-    "token": "<JWT Token>"
-  }
-  ```
+  - **Resposta de Sucesso:**
+  - Código `200 OK`
+  - Conteúdo: `{"token": "<JWT Token>"}`
+    
   - **Respostas de Erro:**
     - 400 Bad Request: Quando MerchantId ou MerchantKey não são fornecidos.
     - 401 Unauthorized: Quando MerchantId ou MerchantKey são inválidos.
