@@ -19,7 +19,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
   {
     "token": "<JWT Token>"
   }
- ```
+  ```
  **Respostas de Erro:**
 > - 400 Bad Request: Quando MerchantId ou MerchantKey não são fornecidos.
 > - 401 Unauthorized: Quando MerchantId ou MerchantKey são inválidos.
@@ -63,7 +63,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
         "status": "CONNECTED"
       }
   ]
-   ```
+  ```
 **Respostas de Erro:**
  > - 401 Unauthorized: Token não fornecido ou inválido.
  > - 400 Bad Request: Falha ao buscar os dados dos veículos
