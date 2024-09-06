@@ -123,7 +123,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
   > **Parâmetros da URL:**
   > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
    
-   **Resposta de Sucesso:**
+  **Resposta de Sucesso:**
   ```json
         {
           "message": "Veículo(s) adicionado(s) com sucesso"
