@@ -120,8 +120,8 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
         "veiculos": ["Carro Exemplo 1", "Carro Exemplo 2"]
       }
    
-   > **Parâmetros da URL:**
-   > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
+ > **Parâmetros da URL:**
+ > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
  
  **Resposta de Sucesso:**
     ```json
