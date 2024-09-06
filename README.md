@@ -19,7 +19,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
   {
     "token": "<JWT Token>"
   }
- 
+ ```
  **Respostas de Erro:**
 > - 400 Bad Request: Quando MerchantId ou MerchantKey não são fornecidos.
 > - 401 Unauthorized: Quando MerchantId ou MerchantKey são inválidos.
@@ -40,6 +40,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
        "status": "CONNECTED"
      }
    ]
+  ```
 **Respostas de Erro:**
  > - 401 Unauthorized: Token não fornecido ou inválido.
  > - 400 Bad Request: Falha ao buscar os dados dos veículos.
@@ -62,6 +63,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
         "status": "CONNECTED"
       }
   ]
+   ```
 **Respostas de Erro:**
  > - 401 Unauthorized: Token não fornecido ou inválido.
  > - 400 Bad Request: Falha ao buscar os dados dos veículos
@@ -81,6 +83,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
        {
           "message": "Veículo atualizado com sucesso!"
         }
+     ```
   **Respostas de Erro:**
    > - 401 Unauthorized: Token não fornecido ou inválido.
    > - 404 Not Found: Veículo não encontrado.
@@ -100,6 +103,7 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
        {
           "message": "Veículo deletado com sucesso"
         }
+     ```
   **Respostas de Erro:**
    > - 401 Unauthorized: Token não fornecido ou inválido.
    > - 404 Not Found: Veículo não encontrado.
@@ -119,17 +123,17 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
         }
      ```
   
-  > **Parâmetros da URL:**
-  > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
-   
-  > **Resposta de Sucesso:**
-   ```json
-    {
-      "message": "Veículo(s) adicionado(s) com sucesso"
-     }
-  ```
-  
-  - **Respostas de Erro:**
-    - 400 Bad Request: Falha ao adicionar o veículo.
+    > **Parâmetros da URL:**
+    > - `veiculos`: Lista de veículos a serem adicionados (obrigatório)
+     
+    > **Resposta de Sucesso:**
+     ```json
+      {
+        "message": "Veículo(s) adicionado(s) com sucesso"
+       }
+    ```
+    
+    - **Respostas de Erro:**
+      - 400 Bad Request: Falha ao adicionar o veículo.
 
 
