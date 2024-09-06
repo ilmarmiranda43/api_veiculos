@@ -53,9 +53,9 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
 - **Autenticação:** Necessário token JWT.
 
 > **Parâmetros da URL:**
- > - `veiculo_id`: ID do veículo (obrigatório)
+> - `veiculo_id`: ID do veículo (obrigatório)
   
-  **Resposta de Sucesso:**
+**Resposta de Sucesso:**
     
 
 **Respostas de Erro:**
