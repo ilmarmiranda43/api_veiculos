@@ -105,6 +105,23 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
    > - 404 Not Found: Veículo não encontrado.
    > - 400 Bad Request: Falha ao deletar o veículo.
 
-
+## 6. Adicionar Veículos
+  - **Endpoint:** `/veiculos/delete/<int:veiculo_id>`
+  - **Método:** `DELETE`
+  - **Descrição:** Apaga o veículo cadastrado pelo código informado.
+  - **Autenticação:** Necessário token JWT.
+  
+     > **Parâmetros da URL:**
+     > - `veiculo_id`: ID do veículo (obrigatório)
+     
+    **Resposta de Sucesso:**
+     ```json
+       {
+          "message": "Veículo deletado com sucesso"
+        }
+  **Respostas de Erro:**
+   > - 401 Unauthorized: Token não fornecido ou inválido.
+   > - 404 Not Found: Veículo não encontrado.
+   > - 400 Bad Request: Falha ao deletar o veículo.
 
 
