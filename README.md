@@ -56,14 +56,14 @@ API que usa banco de dados para cadastrar e gerenciar os veículos da empresa.
  > - `veiculo_id`: ID do veículo (obrigatório)
 
   **Resposta de Sucesso:**
-     ```json
-     [
-     { <br>
-       "id": 1, <br>
-       "veiculo": "Carro Exemplo", <br>
-       "status": "CONNECTED" <br>
-     } <br>
-   ] <br>
+   ```json
+  [
+    {
+      "id": 1,
+      "veículo": "Carro Exemplo",
+      "status": "CONNECTED"
+    }
+  ]
    
 **Respostas de Erro:**
  > - 401 Unauthorized: Token não fornecido ou inválido.
