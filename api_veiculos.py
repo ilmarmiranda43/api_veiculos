@@ -34,7 +34,11 @@ conn_str = (
             "Server=LAPTOP-R3DK1NKD\\SQLEXPRESS;"
             "Database=GerenciarVeiculos;"
             "User Id=Teste_API;"
+<<<<<<< HEAD
             "Password=V@i#u$o&;"
+=======
+            "Password=lica130292;"
+>>>>>>> 0d6f563ed91512882235ffa584a9a19277a0dabf
         )
 
 ns = api.namespace('veiculos', description='Operações relacionadas ao gerenciamento de veículos')
