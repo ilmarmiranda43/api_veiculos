@@ -20,8 +20,8 @@ Authorization: Bearer <token>
   > - `MerchantKey`: Chave do Merchant (obrigatório)
 
   - **Resposta de Sucesso:**
-  - Código `200 OK`
-  - Conteúdo: `{"token": "<JWT Token>"}`
+    - Código `200 OK`
+    - Conteúdo: `{"token": "<JWT Token>"}`
     
   - **Respostas de Erro:**
     - 400 Bad Request: Quando MerchantId ou MerchantKey não são fornecidos.
